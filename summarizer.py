@@ -23,7 +23,6 @@ class RequestModel(BaseModel):
     def format_input(cls, value):
         value = value.replace('"', '\\"').replace("'", "\\'")
         
-        # Optionally sanitize to remove other unwanted characters
         sanitized_value = re.sub(r'[^\w\s-]', '', value)
         
         return sanitized_value.capitalize()

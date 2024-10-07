@@ -7,8 +7,35 @@
     <link rel="stylesheet" href="static/styles.css">
 </head>
 <body>
-    <h1 id="h1">helloworld</h1>
-    
+    <div class="header">
+
+    </div>
+    <section class="main">
+        <div class="top">
+            <div class="toptext">
+                <h1>summarizer</h1>
+                <span>summarizer subtext</span>
+            </div>
+            <div class="actions">
+                <button>Reset</button>
+                <button>Copy</button>
+            </div>
+            <form class="transForm" id="transForm">
+                <label for="input-field"></label>
+                <textarea id="input-field" class="input-field" placeholder="Add text here..."></textarea>
+                <button id="input-btn" class="input-btn" type="submit">Summarize</button>
+            </form>
+        </div>
+        <div class="bottom">
+            <div class="actions">
+                <button>Copy</button>
+            </div>
+            <textarea id="display" class="display"></textarea>
+        </div>
+    </section>
+    <footer class="footer">
+        <span>copyright Rantech c</span>
+    </footer>
     <script src="static/script.js"></script>
 </body>
 </html>
