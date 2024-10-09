@@ -8,33 +8,41 @@
 </head>
 <body>
     <div class="header">
-
+        <nav class="nav">
+            <ul>
+                <li><a class="logo" href="">Rantech</a></li>
+            </ul>
+        </nav>
+        <div class="head-btn-container">
+            <a class="head-btn btn" href="https://micranni.github.io/" target="_blank">More Projects</a>
+            <a class="head-btn btn" href="https://github.com/micranni/summarizer" target="_blank">Github</a>
+        </div>
     </div>
     <section class="main">
         <div class="top">
             <div class="toptext">
-                <h1>summarizer</h1>
-                <span>summarizer subtext</span>
+                <h1>abstractify</h1>
+                <span>Summarize text with LLama3</span>
             </div>
             <div class="actions">
-                <button>Reset</button>
-                <button>Copy</button>
+                <button id="reset-btn" class="action-btn btn">Reset</button>
+                <button id="copy-btn" class="action-btn btn">Copy</button>
             </div>
             <form class="transForm" id="transForm">
                 <label for="input-field"></label>
                 <textarea id="input-field" class="input-field" placeholder="Add text here..."></textarea>
-                <button id="input-btn" class="input-btn" type="submit">Summarize</button>
+                <button id="input-btn" class="input-btn btn" type="submit">Summarize</button>
             </form>
         </div>
         <div class="bottom">
             <div class="actions">
-                <button>Copy</button>
+                <button id="action-copy-btn" class="action-btn btn">Copy</button>
             </div>
-            <textarea id="display" class="display"></textarea>
+            <textarea id="display" class="display" readonly></textarea>
         </div>
     </section>
     <footer class="footer">
-        <span>copyright Rantech c</span>
+        <span>Rantech 2024</span>
     </footer>
     <script src="static/script.js"></script>
 </body>

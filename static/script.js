@@ -24,3 +24,21 @@ document.getElementById('transForm').addEventListener('submit', async function(e
         document.getElementById('display').textContent = error.message;
     }
 });
+
+const textArea = document.getElementById('input-field');
+const display = document.getElementById('display');
+document.getElementById('copy-btn').addEventListener('click', ()=>{
+    navigator.clipboard.writeText(textArea.value);
+    alert('Text copied to clipboard!');
+});
+document.getElementById('reset-btn').addEventListener('click', ()=>{
+    textArea.value = '';
+});
+document.getElementById('action-copy-btn').addEventListener('click', ()=>{
+    navigator.clipboard.writeText(display.value);
+    alert('Text copied to clipboard!');
+});
+
+document.querySelector('head-btn').addEventListener('click', ()=>{
+    window
+})
